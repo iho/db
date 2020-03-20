@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
-        sudo apt-get install pgloader
+        sudo apt-get install pgloader -y
         pgloader people.csv postgres://znmfbuwfmamcqw:ff77063ea42d947b23747ee78d836cc41b4e4ea7de69c22497a6451df8591246@ec2-54-246-90-10.eu-west-1.compute.amazonaws.com:5432/d4bq4gl923c48q
